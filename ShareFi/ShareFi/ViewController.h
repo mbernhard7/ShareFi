@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+extern NSString *ssidInput;
+extern NSString *passInput;
+
 
 @interface ViewController : UIViewController
+
 -(IBAction)getStarted;
 
-@end
 
+@end

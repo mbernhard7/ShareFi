@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC5E637F1AE99FCB002C4B49 /* pageTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5E637E1AE99FCB002C4B49 /* pageTwoViewController.m */; };
 		F4D073791AE8A97200909814 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D073781AE8A97200909814 /* main.m */; };
 		F4D0737C1AE8A97200909814 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D0737B1AE8A97200909814 /* AppDelegate.m */; };
 		F4D0737F1AE8A97200909814 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D0737E1AE8A97200909814 /* ViewController.m */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC5E637D1AE99FCB002C4B49 /* pageTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pageTwoViewController.h; sourceTree = "<group>"; };
+		DC5E637E1AE99FCB002C4B49 /* pageTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pageTwoViewController.m; sourceTree = "<group>"; };
 		F4D073731AE8A97200909814 /* ShareFi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareFi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4D073771AE8A97200909814 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4D073781AE8A97200909814 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -81,6 +84,8 @@
 		F4D073751AE8A97200909814 /* ShareFi */ = {
 			isa = PBXGroup;
 			children = (
+				DC5E637D1AE99FCB002C4B49 /* pageTwoViewController.h */,
+				DC5E637E1AE99FCB002C4B49 /* pageTwoViewController.m */,
 				F4D0737B1AE8A97200909814 /* AppDelegate.m */,
 				F4D0737A1AE8A97200909814 /* AppDelegate.h */,
 				F4D0737D1AE8A97200909814 /* ViewController.h */,
@@ -219,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC5E637F1AE99FCB002C4B49 /* pageTwoViewController.m in Sources */,
 				F4D0737F1AE8A97200909814 /* ViewController.m in Sources */,
 				F4D0737C1AE8A97200909814 /* AppDelegate.m in Sources */,
 				F4D073791AE8A97200909814 /* main.m in Sources */,
