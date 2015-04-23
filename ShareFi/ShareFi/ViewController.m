@@ -26,11 +26,6 @@
 
 - (IBAction)getStarted
 {
-    UIAlertView *helloWorldAlert = [[UIAlertView alloc]
-                                    initWithTitle:@"This Button" message:@ " Does Something"
-                                delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-    
-    // Display the Hello World Message
-    [helloWorldAlert show];
+ 
 }
 @end
