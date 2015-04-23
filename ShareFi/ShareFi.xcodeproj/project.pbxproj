@@ -81,8 +81,8 @@
 		F4D073751AE8A97200909814 /* ShareFi */ = {
 			isa = PBXGroup;
 			children = (
-				F4D0737A1AE8A97200909814 /* AppDelegate.h */,
 				F4D0737B1AE8A97200909814 /* AppDelegate.m */,
+				F4D0737A1AE8A97200909814 /* AppDelegate.h */,
 				F4D0737D1AE8A97200909814 /* ViewController.h */,
 				F4D0737E1AE8A97200909814 /* ViewController.m */,
 				F4D073801AE8A97200909814 /* Main.storyboard */,
