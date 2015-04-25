@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		DC5E637F1AE99FCB002C4B49 /* pageTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5E637E1AE99FCB002C4B49 /* pageTwoViewController.m */; };
+		F4B38B8B1AEB3C41000B3D65 /* Obj-C-FusionTablesAPI in Resources */ = {isa = PBXBuildFile; fileRef = F4B38B8A1AEB3C41000B3D65 /* Obj-C-FusionTablesAPI */; };
+		F4B38B8E1AEB3F29000B3D65 /* _Google Toolbox in Sources */ = {isa = PBXBuildFile; fileRef = F4B38B8D1AEB3F29000B3D65 /* _Google Toolbox */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		F4D073791AE8A97200909814 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D073781AE8A97200909814 /* main.m */; };
 		F4D0737C1AE8A97200909814 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D0737B1AE8A97200909814 /* AppDelegate.m */; };
 		F4D0737F1AE8A97200909814 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D0737E1AE8A97200909814 /* ViewController.m */; };
@@ -30,6 +32,9 @@
 /* Begin PBXFileReference section */
 		DC5E637D1AE99FCB002C4B49 /* pageTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pageTwoViewController.h; sourceTree = "<group>"; };
 		DC5E637E1AE99FCB002C4B49 /* pageTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pageTwoViewController.m; sourceTree = "<group>"; };
+		F47EFAC21AEAC2A400372FAC /* ShareFi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ShareFi.entitlements; sourceTree = "<group>"; };
+		F4B38B8A1AEB3C41000B3D65 /* Obj-C-FusionTablesAPI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Obj-C-FusionTablesAPI"; sourceTree = "<group>"; };
+		F4B38B8D1AEB3F29000B3D65 /* _Google Toolbox */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "_Google Toolbox"; path = "ShareFi/Obj-C-FusionTablesAPI/_Google Toolbox"; sourceTree = "<group>"; };
 		F4D073731AE8A97200909814 /* ShareFi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareFi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4D073771AE8A97200909814 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4D073781AE8A97200909814 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -66,6 +71,7 @@
 		F4D0736A1AE8A97200909814 = {
 			isa = PBXGroup;
 			children = (
+				F4B38B8D1AEB3F29000B3D65 /* _Google Toolbox */,
 				F4D073751AE8A97200909814 /* ShareFi */,
 				F4D0738F1AE8A97200909814 /* ShareFiTests */,
 				F4D073741AE8A97200909814 /* Products */,
@@ -84,6 +90,7 @@
 		F4D073751AE8A97200909814 /* ShareFi */ = {
 			isa = PBXGroup;
 			children = (
+				F47EFAC21AEAC2A400372FAC /* ShareFi.entitlements */,
 				DC5E637D1AE99FCB002C4B49 /* pageTwoViewController.h */,
 				DC5E637E1AE99FCB002C4B49 /* pageTwoViewController.m */,
 				F4D0737B1AE8A97200909814 /* AppDelegate.m */,
@@ -91,6 +98,7 @@
 				F4D0737D1AE8A97200909814 /* ViewController.h */,
 				F4D0737E1AE8A97200909814 /* ViewController.m */,
 				F4D073801AE8A97200909814 /* Main.storyboard */,
+				F4B38B8A1AEB3C41000B3D65 /* Obj-C-FusionTablesAPI */,
 				F4D073831AE8A97200909814 /* Images.xcassets */,
 				F4D073851AE8A97200909814 /* LaunchScreen.xib */,
 				F4D073761AE8A97200909814 /* Supporting Files */,
@@ -173,6 +181,12 @@
 				TargetAttributes = {
 					F4D073721AE8A97200909814 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = H748CUNQU5;
+						SystemCapabilities = {
+							com.apple.VPNLite = {
+								enabled = 0;
+							};
+						};
 					};
 					F4D0738B1AE8A97200909814 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -206,6 +220,7 @@
 			files = (
 				F4D073821AE8A97200909814 /* Main.storyboard in Resources */,
 				F4D073871AE8A97200909814 /* LaunchScreen.xib in Resources */,
+				F4B38B8B1AEB3C41000B3D65 /* Obj-C-FusionTablesAPI in Resources */,
 				F4D073841AE8A97200909814 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4B38B8E1AEB3F29000B3D65 /* _Google Toolbox in Sources */,
 				DC5E637F1AE99FCB002C4B49 /* pageTwoViewController.m in Sources */,
 				F4D0737F1AE8A97200909814 /* ViewController.m in Sources */,
 				F4D0737C1AE8A97200909814 /* AppDelegate.m in Sources */,
@@ -353,9 +369,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ShareFi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -364,9 +384,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ShareFi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
