@@ -7,6 +7,9 @@
 //
 
 #import "pageTwoViewController.h"
+#import "ViewController.h"
+#import "pageThreeViewController.h"
+#import <SystemConfiguration/CaptiveNetwork.h>
 
 @interface pageTwoViewController ()
 
@@ -16,6 +19,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    CFArrayRef myArray = CNCopySupportedInterfaces();
+    CFDictionaryRef myDict = CNCopyCurrentNetworkInfo(CFArrayGetValueAtIndex(myArray, 0));
+    ssidInput= CFDictionaryGetValue(myDict, kCNNetworkInfoKeySSID);
+    _ssidText.text=ssidInput;
     // Do any additional setup after loading the view.
 }
 
@@ -25,25 +32,10 @@
 }
 - (IBAction)submit
 {
-    NSString *ssidInput = _ssidText.text;
-    NSString *passInput = _passText.text;
-    NSString *combined = [NSString stringWithFormat:@"SSID: %@, Pass: %@",ssidInput, passInput];
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"You Entered:"
-                                                    message: combined
-                                                   delegate:nil
-                                          cancelButtonTitle:@"Cancel"
-                                          otherButtonTitles:@"Confirm", nil];
-    alert.tag = 100;
-    [alert show];
-    }
--(void) alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
-    if (alertView.tag == 100) {
-               if (buttonIndex == 0) {
-            
-        }
-    }
-    else {
-    }
+    ssidInput= _ssidText.text;
+    passInput= _passText.text;
+    [self performSegueWithIdentifier:@"twotothree" sender:self];
+  
 }
 
 @end
